@@ -1,0 +1,259 @@
+/* ==========================================================================
+   4LLab — Data Analytics Group, Adelaide University
+   Shared site theme. Palette based on Adelaide University brand:
+   "North Terrace" purple #6956CC with deep ink-purple supports.
+   ========================================================================== */
+
+:root {
+  --au-purple: #6956CC;        /* brand accent */
+  --au-purple-dark: #4938A8;   /* hover / emphasis, AA on white */
+  --au-purple-deep: #2B2260;   /* headers, near-navy purple */
+  --au-purple-ink: #1E1745;    /* darkest — hero gradient end */
+  --au-purple-tint: #F1EEFB;   /* light wash backgrounds */
+  --au-purple-tint-2: #E2DCF7; /* slightly stronger wash */
+  --au-text: #211D35;
+  --au-muted: #5A5570;
+  --bs-link-color: var(--au-purple-dark);
+}
+
+/* ------------------------------------------------------------------ base */
+body {
+  color: var(--au-text);
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--au-purple-dark); }
+a:hover, a:focus { color: var(--au-purple-ink); }
+
+/* visible keyboard focus everywhere */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid var(--au-purple);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* skip link for keyboard / screen-reader users */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 2000;
+  background: var(--au-purple-ink);
+  color: #fff;
+  padding: .6rem 1rem;
+  border-radius: 0 0 .5rem 0;
+}
+.skip-link:focus {
+  left: 0;
+  color: #fff;
+}
+
+/* ---------------------------------------------------------------- header */
+.site-header {
+  background: linear-gradient(135deg, var(--au-purple-deep) 0%, var(--au-purple-ink) 55%, #171134 100%);
+  color: #fff;
+}
+.site-header .site-title {
+  font-size: clamp(1.15rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: .02em;
+  padding: .65rem 1rem .1rem;
+}
+.site-header .site-title .accent { color: #BFB2F3; }
+
+.site-header .navbar { background: transparent !important; }
+.site-header .nav-link {
+  color: rgba(255, 255, 255, .85);
+  border-radius: .4rem;
+  margin: 0 .1rem;
+  transition: background-color .2s ease, color .2s ease;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .12);
+}
+.site-header .nav-link.active {
+  color: #fff;
+  background-color: var(--au-purple);
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ hero */
+.hero {
+  background:
+    radial-gradient(1100px 420px at 85% -10%, rgba(105, 86, 204, .45), transparent 60%),
+    linear-gradient(135deg, var(--au-purple-deep), var(--au-purple-ink));
+  color: #fff;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+}
+@media (min-width: 768px) { .hero { padding: 4rem 3rem; } }
+.hero h1 { font-weight: 700; }
+.hero .lead { color: #E6E1FA; max-width: 60ch; }
+.hero .btn-hero {
+  background: #fff;
+  color: var(--au-purple-deep);
+  font-weight: 600;
+  border: 0;
+}
+.hero .btn-hero:hover { background: var(--au-purple-tint-2); color: var(--au-purple-ink); }
+
+/* ----------------------------------------------------------- components */
+.section-title {
+  border-bottom: 3px solid var(--au-purple);
+  padding-bottom: .5rem;
+  margin-top: 2.5rem;
+  font-weight: 650;
+  color: var(--au-purple-deep);
+}
+
+.card-soft {
+  background: var(--au-purple-tint);
+  border: 1px solid var(--au-purple-tint-2);
+  border-radius: .85rem;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card-soft:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .6rem 1.4rem rgba(43, 34, 96, .14);
+}
+
+/* generic light boxes reused from old design get a purple tint */
+.bg-light { background-color: var(--au-purple-tint) !important; }
+
+.btn-outline-primary {
+  --bs-btn-color: var(--au-purple-dark);
+  --bs-btn-border-color: var(--au-purple-dark);
+  --bs-btn-hover-bg: var(--au-purple-dark);
+  --bs-btn-hover-border-color: var(--au-purple-dark);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: var(--au-purple-deep);
+  --bs-btn-active-border-color: var(--au-purple-deep);
+}
+.btn-primary {
+  --bs-btn-bg: var(--au-purple-dark);
+  --bs-btn-border-color: var(--au-purple-dark);
+  --bs-btn-hover-bg: var(--au-purple-deep);
+  --bs-btn-hover-border-color: var(--au-purple-deep);
+  --bs-btn-active-bg: var(--au-purple-ink);
+  --bs-btn-active-border-color: var(--au-purple-ink);
+}
+.text-primary, .link-primary { color: var(--au-purple-dark) !important; }
+
+.list-group-item-action:hover, .list-group-item-action:focus {
+  background-color: var(--au-purple-tint);
+}
+
+/* member cards */
+.member-card {
+  background: #fff;
+  border: 1px solid var(--au-purple-tint-2);
+  border-radius: .85rem;
+  padding: 1rem;
+  height: 100%;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .5rem 1.2rem rgba(43, 34, 96, .12);
+}
+.member-card img {
+  object-fit: cover;
+  border: 3px solid var(--au-purple-tint-2);
+}
+
+/* project cards */
+.project-card {
+  border: 1px solid var(--au-purple-tint-2);
+  border-radius: .85rem;
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .6rem 1.4rem rgba(43, 34, 96, .14);
+}
+.project-card img { max-width: 300px; height: auto; }
+
+/* ---------------------------------------------------------------- footer */
+.site-footer {
+  margin-top: 3rem;
+  background: var(--au-purple-ink);
+  color: #CFC8EF;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.site-footer a { color: #E6E1FA; }
+.site-footer a:hover { color: #fff; }
+
+/* ----------------------------------------------------------- back to top */
+#backToTop {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1500;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  border: 0;
+  background: var(--au-purple-dark);
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 .4rem 1rem rgba(30, 23, 69, .35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+#backToTop.show { opacity: 1; pointer-events: auto; }
+#backToTop:hover { background: var(--au-purple-deep); }
+
+/* ------------------------------------------------------------ animations */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .5s ease, transform .5s ease;
+  }
+  .fade-in-up.visible { opacity: 1; transform: none; }
+}
+
+/* ---------------------------------------------------------- publications */
+.pub-toolbar {
+  background: var(--au-purple-tint);
+  border: 1px solid var(--au-purple-tint-2);
+  border-radius: .85rem;
+}
+.pub-toolbar input[type="text"] {
+  border: 1px solid var(--au-purple-tint-2);
+  border-radius: .5rem;
+  padding: .45rem .75rem;
+  min-width: min(22rem, 80vw);
+}
+.bibtex_structure .group {
+  color: var(--au-purple-deep);
+  scroll-margin-top: 5rem;
+}
+
+/* legacy markup adapters: style old-page patterns without editing content */
+[role="main"] h2.border-bottom, main h2.border-bottom {
+  border-bottom: 3px solid var(--au-purple) !important;
+  color: var(--au-purple-deep);
+  font-weight: 650;
+}
+[role="main"] .rounded-3.border {
+  border: 1px solid var(--au-purple-tint-2) !important;
+  border-radius: .85rem !important;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+[role="main"] .rounded-3.border:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .6rem 1.4rem rgba(43, 34, 96, .14);
+}
+[role="main"] img.rounded-start { border-radius: .6rem !important; }
+
+/* print: hide chrome, keep content */
+@media print {
+  .site-header, .site-footer, #backToTop, .skip-link, .pub-toolbar { display: none !important; }
+}

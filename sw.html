@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <title>4LLab Software — Data Analytics Group, Adelaide University</title>
+<link href="css/site.css" rel="stylesheet">
+<script src="js/site.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- Website Heading -->
+  <header class="site-header">
+    <p class="site-title text-center m-0 d-none d-sm-block">
+        4LLab <span class="accent">&middot;</span> Data Analytics Group <span class="accent">&middot;</span> Adelaide University
+    </p>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Main navigation">
+      <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <img src="img/4LLabLogov1.svg" alt="4LLab home" width="100">
+          </a>
+          <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1" aria-expanded="false" aria-controls="navbarCollapse1" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse1">
+              <div class="navbar-nav">
+                <a href="members.html" class="nav-item nav-link">Members</a>
+                <a href="publications.html" class="nav-item nav-link">Publications</a>
+                <a href="projects.html" class="nav-item nav-link">Projects</a>
+                <a href="sw.html" class="nav-item nav-link active">Software</a>
+                <a href="workshops.html" class="nav-item nav-link">Workshops</a>
+                <a href="conferences.html" class="nav-item nav-link">Conferences</a>
+                <a href="opportunities.html" class="nav-item nav-link">Opportunities</a>
+              </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Website Content -->
+  <div id="main" role="main" class="container-fluid m-0 p-sm-4">
+    <!-- Section 1 Causal Discovery -->
+    <section>
+      <h2 class="pb-2 mt-5 border-bottom"> Causal Discovery</h2>
+      <div class="p-2 p-sm-5 my-4 bg-light rounded-3">
+        <div class="list-group">
+
+            <!-- item 1 -->
+            <a href="https://pypi.org/project/DEEP-causal/" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+              <img src="icons/box-arrow-up-right.svg" alt="subgroup" width="32" height="32">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">DEEP_causal</h6>
+                  <p class="mb-0 opacity-75"> 
+                    Causal heterogeneity discovery by bottom-up pattern search for personalised decision making, Appl Intell (2022)
+                  </p>
+                </div>
+                <small class="opacity-50 text-nowrap">PyPI- 2022</small>
+              </div>
+            </a>
+
+          <!-- item 2 -->
+          <a href="https://github.com/WeijiaZhang24/TEDVAE" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">TEDVAE: Treatment Effect Estimation with Disentangled Latent Factors</h6>
+                <p class="mb-0 opacity-75"> Proceedings of the AAAI Conference on Artificial Intelligence, 35(12), (2021).
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2021</small>
+            </div>
+          </a>
+          
+          <!-- item 3 -->
+          <div class="m-0 p-0">
+            <button type="button" class="list-group-item list-group-item-action d-flex gap-3 py-3"  data-bs-toggle="collapse" data-bs-target="#collapseCausalFS" aria-expanded="false" aria-controls="collapseCausalFS">
+              <img src="icons/github.svg" alt="CausalFS" width="32" height="32">
+                <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">CausalFS: An open-source package of causal feature selection and causal (Bayesian network) structure learning</h6>
+                    <p class="mb-0 opacity-75"> A comprehensive open-source library that implements the state-of-the-art local causal structure learning approaches.
+                    </p>
+                  </div>
+                  <small class="opacity-50 text-nowrap">Github - 2020</small>
+                </div>
+            </button>
+            <div class="collapse" id="collapseCausalFS">
+              <div class="card card-body">
+                <ul>
+                  <li>
+                    <a target="_blank" href="https://github.com/kuiy/CausalFS">C++ Version</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://github.com/kuiy/pyCausalFS ">Python Version</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://github.com/kuiy/CausalLearner">Matlab Version</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- item 4 -->
+          <a href="https://github.com/chengdb2016/DAVS" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">DAVS-Q: Towards unique and unbiased causal effect estimation from data with hidden variables</h6>
+                <p class="mb-0 opacity-75"> arXiv:2002.10091v2 [stat.ME], (2020).
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2020</small>
+            </div>
+          </a>
+          
+          <!-- item 5 -->
+          <a href="https://github.com/kuiy/M3B" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">M3B: Mining Markov Blankets Without Causal Sufficiency</h6>
+                  <p class="mb-0 opacity-75"> IEEE Transactions on Neural Networks and Learning Systems,Volume: 29, Issue: 12 (2018).
+                  </p>
+                </div>
+                <small class="opacity-50 text-nowrap">Github - 2019</small>
+              </div>
+          </a>
+          
+          <!-- item 6 -->
+          <a href="https://github.com/kuiy/MCFS" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">MCFS: Multi-Source Causal Feature selection</h6>
+                  <p class="mb-0 opacity-75">  IEEE Transactions on Pattern Analysis and Machine Intelligence, Volume: 42, Issue: 9 (2019).
+                  </p>
+                </div>
+                <small class="opacity-50 text-nowrap">Github - 2018</small>
+              </div>
+          </a>
+
+          <!-- item 7 -->
+          <a href="https://github.com/WeijiaZhang24/SurvivalCausalTree" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">SurvivalCausalTree: Mining heterogeneous causal effects for personalized cancer treatment</h6>
+                <p class="mb-0 opacity-75"> Bioinformatics, Volume 33, Issue 15, (2017)
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2017</small>
+            </div>
+          </a>
+
+          <!-- item 8 -->
+          <a href="https://CRAN.R-project.org/package=ParallelPC" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/R_logo.svg" alt="PapallelPC" width="32" height="32">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">ParallelPC: Paralellised Versions of Constraint Based Causal Discovery Algorithms.</h6>
+                  <p class="mb-0 opacity-75"> The parallelised algorithms in the package will generate the same results as that of the 'pcalg' package but will be much more efficient.
+                  </p>
+                </div>
+                <small class="opacity-50 text-nowrap">CRAN - 2015</small>
+              </div>
+          </a>
+
+          <!-- item 9 -->
+          <a href="Causalbook/index.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/journal-code.svg" alt="Causalbook" width="32" height="32">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">Software for the book: "Practical approaches to causal relationship exploration"</h6>
+                  <p class="mb-0 opacity-75"> Website with tutorials and examples.
+                  </p>
+                </div>
+                <small class="opacity-50 text-nowrap">Springer - 2014</small>
+              </div>
+          </a>
+          
+          <!-- item 10 -->
+          <a href="http://4llab.net/jiuyong/weka-CDT-TKDEversion.7z" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/download.svg" alt="weka-CDT" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Causal Decision Tree implementation</h6>
+                <p class="mb-0 opacity-75"> 
+                  IEEE Transactions on Knowledge and Data Engineering, Volume: 29, Issue: 2, (2017).
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">2017</small>
+            </div>
+          </a>
+
+          <!-- item 11 -->
+          <a href="http://4llab.net/jiuyong/DDCR" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/box-arrow-up-right.svg" alt="DDCR" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Discrimination detection by combining association rules and potential outcome model</h6>
+                <p class="mb-0 opacity-75"> 
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap"></small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 2 - Bioinformatics -->
+    <section>
+      <h2 class="pb-2 mt-5 border-bottom"> Bioinformatics</h2>
+      <div class="p-2 p-sm-5 my-4 bg-light rounded-3">
+        <div class="list-group">
+          <!-- item 1 -->
+          <a href="https://github.com/XiaomeiLi1/CancerSubtypesPrognosis" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">CancerSubtypesPrognosis R package contains functions to predict breast cancer subtypes and prognosis.</h6>
+                <p class="mb-0 opacity-75">BMC Bioinformatics 22, 300 (2021).</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2021</small>
+            </div>
+          </a>
+
+          <!-- item 2 -->
+          <a href="https://github.com/pvvhoang/pDriver" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">pDriver: A novel method for unravelling personalised coding and miNRA cancer drivers</h6>
+                <p class="mb-0 opacity-75">Bioinformatics, Volume 37, Issue 19, (2021)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2021</small>
+            </div>
+          </a>
+
+          <!-- item 3 -->
+          <a href="https://github.com/mandarsc/NIBNA" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">NIBNA: a network-based node importance approach for identifying breast cancer drivers</h6>
+                <p class="mb-0 opacity-75">Bioinformatics, Volume 37, Issue 17, (2021)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2021</small>
+            </div>
+          </a>
+
+          <!-- item 4 -->
+          <div class="m-0 p-0">
+            <button type="button" class="list-group-item list-group-item-action d-flex gap-3 py-3"  data-bs-toggle="collapse" data-bs-target="#collapseDreamC" aria-expanded="false" aria-controls="collapseDreamC">
+              <img src="icons/github.svg" alt="" width="32" height="32">
+                <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">The winning methods for predicting cellular position in the DREAM single-cell transcriptomics challenge</h6>
+                    <p class="mb-0 opacity-75"> Briefings in Bioinformatics, Volume 22, Issue 3, (2021)
+                    </p>
+                  </div>
+                  <small class="opacity-50 text-nowrap">Github - 2021</small>
+                </div>
+            </button>
+            <div class="collapse" id="collapseDreamC">
+              <div class="card card-body">
+                <ul>
+                  <li>
+                    <a target="_blank" href="https://github.com/thanhbuu04/SCTCwhatateam">SCTCwhatateam: Predicting cell locations based on location-marker genes (The R scripts of the package)</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://github.com/pvvhoang/SCTCwhatateam-ShinyApp">Shiny application</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+          <a href="https://github.com/AndresMCB/PTC" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">A pseudotemporal causality approach to identifying miRNA–mRNA interactions during biological processes</h6>
+                <p class="mb-0 opacity-75">Bioinformatics, Volume 37, Issue 6, (2021)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2021</small>
+            </div>
+          </a>
+
+          <!-- item 6 -->
+          <a href="https://github.com/pvvhoang/DriverGroup" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">DriverGroup: a novel method for identifying driver gene groups</h6>
+                <p class="mb-0 opacity-75">Bioinformatics, Volume 36, Issue Supplement_2 (2020)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2020</small>
+            </div>
+          </a>
+
+          <!-- item 7 -->
+          <a href="https://github.com/XiaomeiLi1/scPrognosis" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">scPrognosis: A novel single-cell based method for breast cancer prognosis
+                </h6>
+                <p class="mb-0 opacity-75">PLoS Comput Biol 16(8) (2020)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2020</small>
+            </div>
+          </a>
+
+          <!-- item 8 -->
+          <a href="https://github.com/zhangjunpeng411/LMSM" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">LMSM: A modular approach for identifying lncRNA related miRNA sponge modules in breast cancer
+                </h6>
+                <p class="mb-0 opacity-75"> PLoS Comput Biol 16(4) (2020)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2020</small>
+            </div>
+          </a>
+
+          <!-- item 9 -->
+          <a href="https://bioconductor.org/packages/devel/bioc/html/miRspongeR.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/bioconductor.jpg" alt="miRspongeR" width="32" height="32" class="rounded-circle flex-shrink-0">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">miRspongeR: an R/Bioconductor package for the identification and analysis of miRNA sponge interaction networks and modules.</h6>
+                  <p class="mb-0 opacity-75"> BMC Bioinformatics 20, 235 (2019).</p>
+                </div>
+                <small class="opacity-50 text-nowrap">Bioconductor - 2019</small>
+              </div>
+          </a>
+          
+          <!-- item 10 -->
+          <a href="https://github.com/pvvhoang/CancerDriver" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">CBNA: A control theory based method for identifying coding and non-coding cancer drivers
+                </h6>
+                <p class="mb-0 opacity-75"> PLoS Comput Biol 15(12) (2019)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2019</small>
+            </div>
+          </a>
+
+          <!-- item 11 -->
+          <a href="https://github.com/zhangjunpeng411/miRspongeR" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">miRspongeR: an R/Bioconductor package
+                  for the identification and analysis of miRNA
+                  sponge interaction networks and modules
+                </h6>
+                <p class="mb-0 opacity-75"> BMC Bioinformatics volume 20, Article number: 235 (2019)</p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2019</small>
+            </div>
+          </a>
+
+          <!-- item 12 -->
+          <a href="https://github.com/zhangjunpeng411/miRsyn" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">miRsyn: A novel method for identifying miRNA synergism using multiple-intervention causal inference.
+                </h6>
+                <p class="mb-0 opacity-75"> BMC Bioinformatics volume 20, Article number: 613 (2019) </p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2019</small>
+            </div>
+          </a>
+
+          <!-- item 13 -->
+          <a href="https://bioconductor.org/packages/release/bioc/html/miRBaseConverter.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/bioconductor.jpg" alt="miRBaseConverter" width="32" height="32" class="rounded-circle flex-shrink-0">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">miRBaseConverter: A comprehensive and high-efficiency tool for converting and retrieving the information of miRNAs in different miRBase versions.</h6>
+                  <p class="mb-0 opacity-75"> BMC Bioinformatics, 19(s19), 514.</p>
+                </div>
+                <small class="opacity-50 text-nowrap">Bioconductor - 2018</small>
+              </div>
+          </a>
+
+          <!-- item 14 -->
+          <a href="https://github.com/zhangjunpeng411/MSLCRN" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">MSLCRN: a novel method for inferring module-specific lncRNA-mRNA causal regulatory network in human cancer.
+                </h6>
+                <p class="mb-0 opacity-75">Briefings in Bioinformatics, Volume 20, Issue 4, (2019) </p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2018</small>
+            </div>
+          </a>
+
+          <!-- item 15 -->
+          <a href="https://github.com/zhangjunpeng411/LncmiRSRN" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/github.svg" alt="" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">LncmiRSRN: identification and analysis of long non-coding RNA related miRNA sponge regulatory network in human cancer.
+                </h6>
+                <p class="mb-0 opacity-75">Bioinformatics, Volume 34, Issue 24, (2018) </p>
+              </div>
+              <small class="opacity-50 text-nowrap">Github - 2018</small>
+            </div>
+          </a>
+
+          <!-- item 16 -->
+          <a href="https://www.bioconductor.org/packages/release/bioc/html/CancerSubtypes.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/bioconductor.jpg" alt="CancerSubtypes" width="32" height="32" class="rounded-circle flex-shrink-0">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization.</h6>
+                  <p class="mb-0 opacity-75"> Bioinformatics, Volume 33, Issue 19, 01 October 2017, Pages 3131–3133.</p>
+                </div>
+                <small class="opacity-50 text-nowrap">Bioconductor - 2017</small>
+              </div>
+          </a>
+            
+          <!-- item 17 -->
+          <a href="https://www.bioconductor.org/packages/release/bioc/html/miRLAB.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/bioconductor.jpg" alt="miRLAB" width="32" height="32" class="rounded-circle flex-shrink-0">
+              <div class="d-sm-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">"miRLAB": Dry lab for exploring miRNA-mRNA relationships</h6>
+                  <p class="mb-0 opacity-75"> PLoS ONE, 10(12), e0145386.</p>
+                </div>
+                <small class="opacity-50 text-nowrap">Bioconductor - 2015</small>
+              </div>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 Data Mining -->
+    <section>
+      <h2 class="pb-2 mt-5 border-bottom"> Data Mining</h2>
+      <div class="p-2 p-sm-5 my-4 bg-light rounded-3">
+        <div class="list-group">
+          
+          <!-- item 1 -->
+          <a href="./jiuyong/Subgroup/subgroup.htm" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/box-arrow-up-right.svg" alt="subgroup" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Statistically non-redundant Subgroup Discovery</h6>
+                <p class="mb-0 opacity-75"> 
+                  Knowledge-Based Systems, Volume 67, (2014)
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">2014</small>
+            </div>
+          </a>
+
+          
+
+          <!-- item 2 -->
+
+          <a href="./jiuyong/CFDs/CFD.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/box-arrow-up-right.svg" alt="CDF" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Conditional Functional Dependency Discovery</h6>
+                <p class="mb-0 opacity-75"> 
+                  The Computer Journal, Volume 56, Issue 3, (2013)
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">2013</small>
+            </div>
+          </a>
+
+          <!-- item 3 -->
+          <a href="./jiuyong/MDMT/MDMT.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/box-arrow-up-right.svg" alt="MDMT" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Diversified Multiple Tree Classifier</h6>
+                <p class="mb-0 opacity-75">
+                  Intelligent Systems For Bioinformatics (2006)
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">2006</small>
+            </div>
+          </a>
+
+          <!-- item 4 -->
+          <a href="./jiuyong/OAC/robust.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/box-arrow-up-right.svg" alt="robust" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Robust rule based classifications</h6>
+                <p class="mb-0 opacity-75"> 
+                  Conferences in Research and Practice in Information Technology. Vol. 39. Australian Computer Society Inc., (2005).
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">2005</small>
+            </div>
+          </a>
+         
+          <!-- item 5 -->
+          <a href="./jiuyong/Risk-Preventive/Risk-Preventive.html" target ="_blank" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="icons/box-arrow-up-right.svg" alt="Risk-Preventive" width="32" height="32">
+            <div class="d-sm-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">Mining risk and preventive patterns</h6>
+                <p class="mb-0 opacity-75"> 
+                  KDD’05, August 21–24, (2005)
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">2005</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-->
+      <footer class="site-footer">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">Copyright &copy; <span class="js-year">2026</span> 4LLab &mdash; Data Analytics Group, Adelaide University</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="members.html">Members</a>
+          <span class="mx-2" aria-hidden="true">|</span>
+          <a href="opportunities.html">Join us</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
