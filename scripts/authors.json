@@ -1,0 +1,11 @@
+{
+  "_comment": "Staff publication sources for the monthly auto-updater. ORCID is preferred (stable and unambiguous). To add/remove a person, edit the list below. start_year limits how far back to import.",
+  "start_year": 2015,
+  "authors": [
+    { "name": "Jiuyong Li",  "orcid": "0000-0002-9023-1878", "openalex": "" },
+    { "name": "Lin Liu",     "orcid": "0000-0003-2843-5738", "openalex": "" },
+    { "name": "Jixue Liu",   "orcid": "0000-0002-0794-0404", "openalex": "" },
+    { "name": "Thuc Duy Le", "orcid": "0000-0002-9732-4313", "openalex": "" },
+    { "name": "Sha Lu",      "orcid": "0000-0002-2826-3123", "openalex": "" }
+  ]
+}

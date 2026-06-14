@@ -28,6 +28,36 @@
     });
   }
 
+  // Dark mode toggle (remembered across visits)
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (e) {}
+  if (saved === "dark" || (saved === null && window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    root.setAttribute("data-theme", "dark");
+  }
+  function syncToggle(btn) {
+    var dark = root.getAttribute("data-theme") === "dark";
+    btn.innerHTML = dark ? "☀️" : "🌙";
+    btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+    btn.setAttribute("aria-pressed", dark ? "true" : "false");
+  }
+  var navContainer = document.querySelector(".site-header .navbar .container-fluid");
+  if (navContainer) {
+    var toggle = document.createElement("button");
+    toggle.id = "themeToggle";
+    toggle.type = "button";
+    syncToggle(toggle);
+    toggle.addEventListener("click", function () {
+      var dark = root.getAttribute("data-theme") === "dark";
+      if (dark) { root.removeAttribute("data-theme"); }
+      else { root.setAttribute("data-theme", "dark"); }
+      try { localStorage.setItem("theme", dark ? "light" : "dark"); } catch (e) {}
+      syncToggle(toggle);
+    });
+    navContainer.appendChild(toggle);
+  }
+
   // Back-to-top button
   var btn = document.createElement("button");
   btn.id = "backToTop";
