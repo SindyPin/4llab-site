@@ -31,13 +31,16 @@
               </button>
               <div class="navbar-collapse collapse" id="navbarCollapse1">
                   <div class="navbar-nav">
-                    <a href="members.html" class="nav-item nav-link">Members</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="members.html" class="nav-item nav-link">Members</a>
                     <a href="publications.html" class="nav-item nav-link">Publications</a>
                     <a href="projects.html" class="nav-item nav-link">Projects</a>
                     <a href="sw.html" class="nav-item nav-link">Software</a>
+                <a href="datasets.html" class="nav-item nav-link">Datasets</a>
                     <a href="workshops.html" class="nav-item nav-link">Workshops</a>
                     <a href="conferences.html" class="nav-item nav-link">Conferences</a>
                     <a href="opportunities.html" class="nav-item nav-link">Opportunities</a>
+                <a href="jobs.html" class="nav-item nav-link">Jobs</a>
                   </div>
               </div>
           </div>
@@ -66,6 +69,64 @@
             <button type="button" class="btn btn-hero btn-lg mt-2" data-bs-toggle="collapse" data-bs-target="#more1" aria-expanded="false" aria-controls="more1">Learn more</button>
         </section>
 
+        <!-- Key numbers -->
+        <section aria-label="Group at a glance" class="fade-in-up">
+            <div class="row g-3 py-3 row-cols-2 row-cols-md-4 text-center">
+                <div class="col">
+                    <div class="card-soft p-3 h-100">
+                        <div class="fs-2 fw-bold text-primary">400+</div>
+                        <div class="text-muted">Publications</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-soft p-3 h-100">
+                        <div class="fs-2 fw-bold text-primary">30+</div>
+                        <div class="text-muted">PhD graduates</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-soft p-3 h-100">
+                        <div class="fs-2 fw-bold text-primary">7</div>
+                        <div class="text-muted">ARC Discovery grants</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-soft p-3 h-100">
+                        <div class="fs-2 fw-bold text-primary">14</div>
+                        <div class="text-muted">Current PhD students</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section aria-labelledby="news-heading" class="fade-in-up">
+            <h2 id="news-heading" class="section-title">News</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent px-0">
+                    <span class="badge bg-primary me-2">2026</span>
+                    Fair graph representation learning accepted at AAAI 2026, and TabPFN-based early detection of long COVID published in <em>Machine Learning: Science and Technology</em>.
+                </li>
+                <li class="list-group-item bg-transparent px-0">
+                    <span class="badge bg-success me-2">2025</span>
+                    Group papers accepted at ICML 2025, IJCAI 2025 and The ACM Web Conference 2025 &mdash; and six members completed their PhDs.
+                </li>
+                <li class="list-group-item bg-transparent px-0">
+                    <span class="badge bg-info text-dark me-2">2024</span>
+                    Three group members completed their PhDs: Ji-Young Park, Ziqi Xu and Liang Zhao.
+                </li>
+                <li class="list-group-item bg-transparent px-0">
+                    <span class="badge bg-warning text-dark me-2">2023</span>
+                    Awarded an <a href="projects.html#HProjects">ARC Discovery Project</a>, &ldquo;Building competency-aware and assuring machine learning systems&rdquo; (2023&ndash;2026), and organised the <a href="workshops.html">CDPD 2023 SIGKDD workshop</a>.
+                </li>
+                <li class="list-group-item bg-transparent px-0">
+                    <span class="badge bg-danger me-2">2022</span>
+                    Released <a href="sw.html">DEEP_causal</a> on PyPI for causal heterogeneity discovery in personalised decision making.
+                </li>
+            </ul>
+            <p class="mt-2"><a href="publications.html" class="btn btn-outline-primary btn-sm">See all publications &raquo;</a></p>
+        </section>
+
         <!-- Research areas -->
         <section aria-labelledby="areas-heading" class="fade-in-up">
             <h2 id="areas-heading" class="section-title">What we work on</h2>
@@ -86,7 +147,11 @@
                 </div>
                 <div class="col">
                     <div class="card-soft p-4 h-100">
-                        <i class="bi bi-activity fs-2 text-primary" aria-hidden="true"></i>
+                        <svg class="text-primary" width="32" height="32" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" role="img" aria-label="DNA helix">
+                            <path d="M4.5 1c0 3.5 7 4.5 7 8s-7 4.5-7 6.5"/>
+                            <path d="M11.5 1c0 3.5-7 4.5-7 8s7 4.5 7 6.5"/>
+                            <path d="M5.2 3.2h5.6M4.2 5.6h7.6M4.2 10.4h7.6M5.2 12.8h5.6"/>
+                        </svg>
                         <h3 class="fs-5 mt-2">Bioinformatics</h3>
                         <p class="mb-0">Causal inference methods for biological data, gene regulatory networks and drug repurposing.</p>
                     </div>
@@ -123,6 +188,13 @@
             </div>
         </section>
 
+        <!-- Group photo -->
+        <section aria-labelledby="photo-heading" class="fade-in-up">
+            <h2 id="photo-heading" class="section-title">Our group</h2>
+            <img src="img/group-photo.jpg" class="img-fluid rounded-3 d-block mx-auto" style="max-width:720px;" alt="The 4LLab Data Analytics Group at Adelaide University">
+
+        </section>
+
         <!-- footer-->
         <footer class="site-footer">
             <div class="row">
@@ -133,6 +205,10 @@
                     <a href="members.html">Members</a>
                     <span class="mx-2" aria-hidden="true">|</span>
                     <a href="opportunities.html">Join us</a>
+                    <span class="mx-2" aria-hidden="true">|</span>
+                    <a href="cite.html">Cite us</a>
+                    <span class="mx-2" aria-hidden="true">|</span>
+                    <a href="publications.rss">RSS</a>
                 </div>
             </div>
         </footer>

@@ -29,13 +29,16 @@
           </button>
           <div class="navbar-collapse collapse" id="navbarCollapse1">
               <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="members.html" class="nav-item nav-link">Members</a>
                 <a href="publications.html" class="nav-item nav-link">Publications</a>
                 <a href="projects.html" class="nav-item nav-link">Projects</a>
                 <a href="sw.html" class="nav-item nav-link active">Software</a>
+                <a href="datasets.html" class="nav-item nav-link">Datasets</a>
                 <a href="workshops.html" class="nav-item nav-link">Workshops</a>
                 <a href="conferences.html" class="nav-item nav-link">Conferences</a>
                 <a href="opportunities.html" class="nav-item nav-link">Opportunities</a>
+                <a href="jobs.html" class="nav-item nav-link">Jobs</a>
               </div>
           </div>
       </div>
@@ -44,6 +47,12 @@
 
   <!-- Website Content -->
   <div id="main" role="main" class="container-fluid m-0 p-sm-4">
+    <div class="card-soft p-3 my-3">
+      <p class="mb-1"><strong>Getting the code.</strong> Most tools below link to a GitHub repository or a PyPI package.</p>
+      <p class="mb-0">PyPI packages install with <code>pip install &lt;package-name&gt;</code>; GitHub tools can be cloned with
+        <code>git clone &lt;repo-url&gt;</code>. See each project's README for full instructions.</p>
+    </div>
+
     <!-- Section 1 Causal Discovery -->
     <section>
       <h2 class="pb-2 mt-5 border-bottom"> Causal Discovery</h2>
@@ -56,9 +65,10 @@
               <div class="d-sm-flex gap-2 w-100 justify-content-between">
                 <div>
                   <h6 class="mb-0">DEEP_causal</h6>
-                  <p class="mb-0 opacity-75"> 
+                  <p class="mb-0 opacity-75">
                     Causal heterogeneity discovery by bottom-up pattern search for personalised decision making, Appl Intell (2022)
                   </p>
+                  <p class="mb-0"><code>pip install DEEP-causal</code></p>
                 </div>
                 <small class="opacity-50 text-nowrap">PyPI- 2022</small>
               </div>
@@ -544,6 +554,10 @@
           <a href="members.html">Members</a>
           <span class="mx-2" aria-hidden="true">|</span>
           <a href="opportunities.html">Join us</a>
+          <span class="mx-2" aria-hidden="true">|</span>
+          <a href="cite.html">Cite us</a>
+          <span class="mx-2" aria-hidden="true">|</span>
+          <a href="publications.rss">RSS</a>
         </div>
       </div>
     </footer>
